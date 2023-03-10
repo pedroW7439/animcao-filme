@@ -16,7 +16,7 @@ main {
     top: 40%;
     left: 40%;
     opacity: 0.8;
-    animation: death-star 3.5s;
+    animation: death-star 2.5s;
 }
 
 @keyframes death-star {
@@ -36,7 +36,7 @@ main {
     width: 300px;
     top: 40%;
     left: 40%;
-    animation: explode 3s 3s;
+    animation: explode 3s 2s;
 }
 
 @keyframes explode {
@@ -55,29 +55,32 @@ main {
     }
 }
 
-.logo {
+.logo img {
     position: absolute;
-    height: 300px;
-    width: 300px;
-    top: 40%;
-    left: 40%;
-    animation: logo 4s 5.5s;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    animation-name: logo;
+    animation-duration: 10s;
 }
 
 @keyframes logo {
-
     0% {
-        background-image: url(../pedro/star-wars.png);
-        background-size: 300px;
+        height: 0px;
+    }
+
+    20% {
+        height: 0px;
+        top: 60%;
     }
 
     80% {
-        opacity: 1;
+        height: 400px;
+        top: 40%
     }
 
     100% {
-        background-image: url(../pedro/star-wars.png);
-        background-size: 300px;
-        opacity: 0.1;
+        height: 200px;
     }
 }
