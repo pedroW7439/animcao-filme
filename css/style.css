@@ -1,0 +1,83 @@
+body {
+    background-image: url(https://preview.redd.it/dk17m1oe48941.jpg?width=960&crop=smart&auto=webp&v=enabled&s=034a4be4bf87f0259d2c6cda98bd2aa49333bf19);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+}
+
+main {
+    display: flex;
+}
+
+.death-star {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 40%;
+    left: 40%;
+    opacity: 0.8;
+    animation: death-star 3.5s;
+}
+
+@keyframes death-star {
+
+    0% {
+        background-image: url(../pedro/death-star.png);
+    }
+
+    100% {
+        background-image: url(../pedro/death-star.png);
+    }
+}
+
+.explode {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 40%;
+    left: 40%;
+    animation: explode 3s 3s;
+}
+
+@keyframes explode {
+
+    0% {
+        background-image: url(../pedro/explode4.gif);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url(../pedro/explode4.gif);
+        opacity: 0.1;
+    }
+}
+
+.logo {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 40%;
+    left: 40%;
+    animation: logo 4s 5.5s;
+}
+
+@keyframes logo {
+
+    0% {
+        background-image: url(../pedro/star-wars.png);
+        background-size: 300px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url(../pedro/star-wars.png);
+        background-size: 300px;
+        opacity: 0.1;
+    }
+}
