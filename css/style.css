@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars?styles=139840');
+
 body {
     background-image: url(https://preview.redd.it/dk17m1oe48941.jpg?width=960&crop=smart&auto=webp&v=enabled&s=034a4be4bf87f0259d2c6cda98bd2aa49333bf19);
     background-size: cover;
@@ -21,11 +23,11 @@ main {
 @keyframes death-star {
 
     0% {
-        background-image: url(../pedro/death-star.png);
+        background-image: url(../pedro/death-star-crop.png);
     }
 
     100% {
-        background-image: url(../pedro/death-star.png);
+        background-image: url(../pedro/death-star-crop.png);
     }
 }
 
@@ -58,7 +60,7 @@ main {
     position: absolute;
     height: 200px;
     transform: translate(-50%, -50%);
-    top: 20%;
+    top: 30%;
     left: 50%;
     animation-name: logo;
     animation-duration: 10s;
@@ -298,4 +300,49 @@ main {
         top: 85%;
         opacity: 0.8;
     }
+}
+.texto{
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 5px solid #FFE81F;
+    padding: 10px;
+    border-radius: 50px;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto{
+    0%, 100%{
+        visibility: visible;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.texto:hover{
+    background-color: #FFE81F;
+    border: none;
+    transition-duration: 0.5s;
+    animation-play-state: paused;
+    opacity: 1;
+}
+
+.texto h1{
+    font-size: 1.5em;
+    color: #FFE81F;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-family: 'Star Wars', sans-serif;
+}
+
+.texto:hover h1{
+    color: black;
 }
