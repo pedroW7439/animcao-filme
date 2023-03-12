@@ -21,9 +21,18 @@
             <div class="x-wing1"><img src="../pedro/x-wing-crop.png" alt="" /></div>
             <div class="x-wing2"><img src="../pedro/x-wing-crop.png" alt="" /></div>
             <div class="logo"><img src="../pedro/star-wars.png" alt="" /></div>
-            <a href="https://github.com/pedroW7439/animcao-filme"><div class="texto">
-                <h1>Garanta seu ingresso</h1>
-            </div></a>
+            <a href="https://github.com/pedroW7439/animcao-filme">
+                <div class="texto">
+                    <h1>Garanta seu ingresso</h1>
+                </div>
+            </a>
+            <audio src="../pedro/tema.mp3" autoplay></audio>
         </main>
+        <script>
+            const tema = document.querySelector("audio");
+            document.addEventListener("DOMContentLoaded", () => {
+                tema.play();
+            });
+        </script>
     </body>
 </html>

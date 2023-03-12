@@ -231,7 +231,7 @@ main {
     top: 0px;
     left: 80%;
     height: 0px;
-    animation: x-wing1 10s 9s infinite;
+    animation: x-wing1 10s 9.5s infinite;
 }
 
 @keyframes x-wing1 {
@@ -269,7 +269,7 @@ main {
     top: 50px;
     left: 80%;
     height: 0px;
-    animation: x-wing2 10s 9.5s infinite;
+    animation: x-wing2 10s 9s infinite;
 }
 
 @keyframes x-wing2 {
@@ -301,7 +301,8 @@ main {
         opacity: 0.8;
     }
 }
-.texto{
+
+.texto {
     visibility: hidden;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -316,17 +317,20 @@ main {
     animation-iteration-count: infinite;
 }
 
-@keyframes texto{
-    0%, 100%{
+@keyframes texto {
+
+    0%,
+    100% {
         visibility: visible;
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
 
-.texto:hover{
+.texto:hover {
     background-color: #FFE81F;
     border: none;
     transition-duration: 0.5s;
@@ -334,7 +338,7 @@ main {
     opacity: 1;
 }
 
-.texto h1{
+.texto h1 {
     font-size: 1.5em;
     color: #FFE81F;
     font-weight: 100;
@@ -343,6 +347,6 @@ main {
     font-family: 'Star Wars', sans-serif;
 }
 
-.texto:hover h1{
+.texto:hover h1 {
     color: black;
 }
