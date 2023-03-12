@@ -350,3 +350,51 @@ main {
 .texto:hover h1 {
     color: black;
 }
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    top: 55%;
+    left: 50%;
+    animation: data;
+    animation-duration: 10s;
+}
+
+.data p{
+    margin: auto;
+    color: #FFE81F;
+    font-family: monospace;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.data h2{
+    margin: auto;
+    color: #FFE81F;
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 100;
+}
+
+@keyframes data{
+    0%{
+        top: 100%;
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
