@@ -8,6 +8,7 @@ body {
 
 main {
     display: flex;
+
 }
 
 .death-star {
@@ -317,6 +318,20 @@ main {
     animation-iteration-count: infinite;
 }
 
+.texto2 {
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 5px solid #FFE81F;
+    padding: 10px;
+    border-radius: 50px;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes texto {
 
     0%,
@@ -330,15 +345,16 @@ main {
     }
 }
 
-.texto:hover {
+/* .texto:hover {
     background-color: #FFE81F;
     border: none;
     transition-duration: 0.5s;
     animation-play-state: paused;
     opacity: 1;
-}
+} */
 
-.texto h1 {
+.texto h1,
+.texto2 h1 {
     font-size: 1.5em;
     color: #FFE81F;
     font-weight: 100;
@@ -347,8 +363,28 @@ main {
     font-family: 'Star Wars', sans-serif;
 }
 
-.texto:hover h1 {
+/* .texto:hover h1 {
     color: black;
+} */
+
+.botao {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    background-color: #FFE81F;
+    border: none;
+    border-radius: 50px;
+}
+
+.botao h1 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-family: 'Star Wars', sans-serif;
 }
 
 .data {
@@ -362,10 +398,10 @@ main {
     top: 55%;
     left: 50%;
     animation: data;
-    animation-duration: 10s;
+    animation-duration: 12s;
 }
 
-.data p{
+.data p {
     margin: auto;
     color: #FFE81F;
     font-family: monospace;
@@ -374,7 +410,7 @@ main {
     font-weight: bold;
 }
 
-.data h2{
+.data h2 {
     margin: auto;
     color: #FFE81F;
     font-family: 'Star Wars', sans-serif;
@@ -383,18 +419,37 @@ main {
     font-weight: 100;
 }
 
-@keyframes data{
-    0%{
-        top: 100%;
+@keyframes data {
+    /* 0% {
+        top: 400%;
         opacity: 0;
+        transform: translate(-50%, -50%) scale(3);
     }
-    80%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 0.5;
-    }
-    100%{
+
+    30% {
         opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    } */
+
+
+    from {
+        top: 400%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
